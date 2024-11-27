@@ -5,7 +5,7 @@ FROM python:3.9-alpine
 WORKDIR /app
 
 # Копіюємо файл з кодом у контейнер
-COPY NoteManager.py ./
+COPY program.py ./
 
 # Вказуємо команду для запуску вашої програми NoteManager
-CMD ["python", "NoteManager.py"]
+CMD ["python", "program.py"]
