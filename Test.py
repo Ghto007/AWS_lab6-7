@@ -92,9 +92,6 @@ class TestClassManager(unittest.TestCase):
         with self.assertRaises(IndexError):
             self.manager.edit_child_by_index("1А", 0, "Новий", "Ім'я", "По-батькові")  # Редагування з порожнього списку
 
-    import xmlrunner 
-    runner = xmlrunner.XMLTestRunner(output='test-reports') 
-    unittest.main(testRunner=runner)
 
 # Запуск тестів
 if __name__ == '__main__':
