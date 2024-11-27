@@ -36,7 +36,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        python3 -m unittest test_app.py
+        python3 -m unittest Test.py
       env:
         CI: true
     - name: Setup Terraform
