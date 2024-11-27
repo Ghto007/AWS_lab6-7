@@ -49,7 +49,7 @@ resource "aws_security_group" "web_app" {
 }
 
 resource "aws_instance" "web_instance" {
-  ami           = "ami-0453ec754f44f9a4a"
+  ami           = "ami-0866a3c8686eaeeba"
   instance_type = "t3.micro"
   security_groups = ["web_app"]
 
