@@ -58,10 +58,11 @@ resource "aws_instance" "web_instance" {
   curl -fsSL https://get.docker.com -o get-docker.sh
   sudo sh get-docker.sh
   sudo groupadd docker
-  sudo usermod -aG docker ubuntu
+  sudo usermod -aG docker $USER
   newgrp docker
   docker pull  ghto007/aws:latest
-  docker run -id  ghto007/aws:latest
+  docker run -it ghto007/aws:latest
+
   EOF
 
 
