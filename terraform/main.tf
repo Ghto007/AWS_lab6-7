@@ -49,9 +49,9 @@ resource "aws_security_group" "web_app" {
 }
 
 resource "aws_instance" "webapp_instance" {
-  ami           = "ami-08eb150f611ca277f"
-  instance_type = "t3.micro"
-  vpc_security_group_ids = [aws_security_group.web_app.id]
+  ami           = "ami-0166fe664262f664c"
+  instance_type = "t2.micro"
+  security_groups = ["web_app"]
 
   user_data = <<-EOF
   #!/bin/bash
